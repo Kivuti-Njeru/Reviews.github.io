@@ -1,0 +1,117 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100;200;300;400&display=swap');
+
+:root {
+
+  /* COLORS */
+  --clr-primary-5: rgb(10, 190, 70);
+  --clr-bg: rgba(10, 233, 120, 0.01);
+  --clr-line: rgba(50, 129, 33, 0.85);
+
+  /* SIZES */
+
+  --border-sm: .15rem;
+  --border-m: .2rem;
+  --border-lg: .3rem;
+
+  --pad-sm: .2rem;
+  /* --pad-m:; */
+  --pad-m: .4rem;
+  /* --pad-lg:; */
+  --pad-lg: .6rem;
+
+  --size-xxs: .5rem;
+  --size-xs: .75rem;
+  --size-sm: .875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.874rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+
+  /* Fonts */
+  --font-playfair: 'Playfair Display SC', serif;
+  --font-redhat: 'Red Hat Display', sans-serif;
+  --font-oxygen: 'Oxygen', sans-serif;
+  --font-m-plus: 'M PLUS Rounded 1c', sans-serif;
+  --font-taviraj: 'Taviraj', serif;
+
+  /* =========== Shadows ============== */
+
+  --shadow-sm: 2px 2px 5px 3px rgba(0, 0, 0, 0.035),
+               -2px -2px 5px 3px rgba(0, 0, 0, 0.035),
+               0px 0px 5px 3px rgba(0, 0, 0, 0.035),
+               0px 0px 5px 3px rgba(0, 0, 0, 0.035);
+
+  --shadow-m: 2px 2px 5px 3px rgba(0, 0, 0, 0.065),
+               -2px -2px 5px 3px rgba(0, 0, 0, 0.065),
+               0px 0px 5px 3px rgba(0, 0, 0, 0.065),
+               0px 0px 5px 3px rgba(0, 0, 0, 0.065);
+
+  --shadow-lg: 2px 2px 5px 3px rgba(0, 0, 0, 0.095),
+               -2px -2px 5px 3px rgba(0, 0, 0, 0.095),
+               0px 0px 5px 3px rgba(0, 0, 0, 0.095),
+               0px 0px 5px 3px rgba(0, 0, 0, 0.095);
+
+}
+
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  position: relative;
+  scrollbar-gutter: stable;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button{
+  padding-top: var(--pad-sm);
+  padding-left:var(--pad-m);
+  padding-right: var(--pad-m);
+  padding-bottom: var(--pad-sm);
+
+  border-radius: var(--border-sm);
+  cursor: pointer;
+  color: #333333;
+  background: transparent;
+  display: grid;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  place-content: center;
+  text-align: center;
+  user-select: none;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
